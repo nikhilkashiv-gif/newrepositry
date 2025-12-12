@@ -32,16 +32,16 @@ public class automationexercise {
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
     }
 
-//    @Test(priority = 0, description = "Verify Title of Dashboard page")
-//    public void verifyTitle() {
-//        driver.get("https://automationexercise.com/");
-//
-//        String actualTitle = driver.getTitle();
-//        System.out.println("Page title is: " + actualTitle);
-//
-//        String expectedTitle = "Automation Exercise";
-//        Assert.assertEquals(actualTitle, expectedTitle, "Title is wrong");
-//    }
+   @Test(priority = 0, description = "Verify Title of Dashboard page")
+   public void verifyTitle() {
+       driver.get("https://automationexercise.com/");
+
+       String actualTitle = driver.getTitle();
+       System.out.println("Page title is: " + actualTitle);
+
+       String expectedTitle = "Automation Exercise";
+       Assert.assertEquals(actualTitle, expectedTitle, "Title is wrong");
+   }
 
     @Test(priority = 0, description = "scroll")
     public void verifyTitle22() {
@@ -54,8 +54,7 @@ public class automationexercise {
         		 serachbox.sendKeys("blue");
         		 WebElement serachicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='submit_search'])[1]")));       		 
         		 serachicon.click();
-//        		 WebElement serahicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='submit_search'])[1]")));       		 
-//        		 serachicon.click(       		 
+//        		    		 
         		  WebElement elementToHover = driver.findElement(By.xpath("(//*[@class='productinfo text-center'])[1]"));
         		  js.executeScript("arguments[0].scrollIntoView(true);", elementToHover);
         	        // Create an Actions object to perform hover and click actions
