@@ -53,7 +53,7 @@ public class automationexercise {
         		 WebElement serachbox = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='search_product'])[1]")));
         		 serachbox.sendKeys("blue");
         		 WebElement serachicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='submit_search'])[1]")));       		 
-        		 serachicon.click();
+        		// serachicon.click();
 //        		    	
 //	 
         		  WebElement elementToHover = driver.findElement(By.xpath("(//*[@class='productinfo text-center'])[1]"));
