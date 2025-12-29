@@ -54,8 +54,7 @@ public class automationexercise {
         		 serachbox.sendKeys("blue");
         		 WebElement serachicon = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//*[@id='submit_search'])[1]")));       		 
         		 serachicon.click();
-//        		    	
-//	 
+//        		    	 
         		  WebElement elementToHover = driver.findElement(By.xpath("(//*[@class='productinfo text-center'])[1]"));
         		  js.executeScript("arguments[0].scrollIntoView(true);", elementToHover);
         	        // Create an Actions object to perform hover and click actions
